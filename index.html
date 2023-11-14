@@ -4,16 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="sidebar">
-        
+    <nav class="sidebar hidden-mb">
+        <div class="menu-list list">
+            <i class="fa-solid fa-x hidden-pc" onclick="menuToggle()"></i>
+            <div class="menu-item"><a>Home</a></div>
+            <div class="menu-item"><a>Service</a></div>
+            <div class="menu-item"><a>News</a></div>
+            <div class="menu-item"><a>Blog</a></div>
+            <div class="menu-item"><a>Contact</a></div>
+        </div>
+    </nav>
+    <div class="page">
+        <div class="content">
+            <i class="fa-solid fa-bars hidden-pc" onclick="menuToggle()"></i>
+            <div class="img-box logo">
+                <img src="./img/logoNCC 1.png" alt="NCC">
+            </div>
+            <div class="para">
+                <h3>Lorem ipsum dolor sit amet?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quaerat et labore aperiam incidunt, minus fuga, a libero sed, eaque officiis! Eos dolor iure distinctio exercitationem unde in, voluptatem perspiciatis neque iste dolorem fuga provident debitis, fugit optio? Architecto, similique.</p>
+            </div>
+            <ul class="list-para list">
+                <li class="para-item">
+                    <h2 class="item-title">Lorem ipsum dolor sit amet</h2>
+                    <div class="item-content">
+                        <img src="./img/css-icon 1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum eaque, laboriosam, maiores, quae iure modi quisquam id minus laborum consectetur debitis! Aliquam vero obcaecati veniam nulla ab. Nesciunt voluptate fuga doloribus repellendus quae modi dolore blanditiis officiis tenetur recusandae in, quasi corrupti impedit cumque reiciendis voluptatem quia error dolorum quo vero sit incidunt accusantium maiores ut! Est ipsa ad dolores cum quo hic aliquid ullam id doloremque beatae quam consectetur quos assumenda aperiam, porro quaerat. Tempora delectus sequi nemo quaerat illum fuga, dolore rem ullam excepturi incidunt nesciunt quo minus voluptas fugiat non placeat iure enim, commodi, sit ut.</p>
+                    </div>
+                </li>
+                <li class="para-item">
+                    <h2 class="item-title">Lorem ipsum dolor sit amet</h2>
+                    <div class="item-content">
+                        <img src="./img/url-icon 1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum eaque, laboriosam, maiores, quae iure modi quisquam id minus laborum consectetur debitis! Aliquam vero obcaecati veniam nulla ab. Nesciunt voluptate fuga doloribus repellendus quae modi dolore blanditiis officiis tenetur recusandae in, quasi corrupti impedit cumque reiciendis voluptatem quia error dolorum quo vero sit incidunt accusantium maiores ut! Est ipsa ad dolores cum quo hic aliquid ullam id doloremque beatae quam consectetur quos assumenda aperiam, porro quaerat. Tempora delectus sequi nemo quaerat illum fuga, dolore rem ullam excepturi incidunt nesciunt quo minus voluptas fugiat non placeat iure enim, commodi, sit ut.</p>
+                    </div>
+                </li>
+                <li class="para-item">
+                    <h2 class="item-title">Lorem ipsum dolor sit amet</h2>
+                    <div class="item-content">
+                        <img src="./img/html-icon 1.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum eaque, laboriosam, maiores, quae iure modi quisquam id minus laborum consectetur debitis! Aliquam vero obcaecati veniam nulla ab. Nesciunt voluptate fuga doloribus repellendus quae modi dolore blanditiis officiis tenetur recusandae in, quasi corrupti impedit cumque reiciendis voluptatem quia error dolorum quo vero sit incidunt accusantium maiores ut! Est ipsa ad dolores cum quo hic aliquid ullam id doloremque beatae quam consectetur quos assumenda aperiam, porro quaerat. Tempora delectus sequi nemo quaerat illum fuga, dolore rem ullam excepturi incidunt nesciunt quo minus voluptas fugiat non placeat iure enim, commodi, sit ut.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            Copyright © 2021
+        </footer>
     </div>
-    <div class="content">
-
-    </div>
-    <footer>
-
-    </footer>
+    <script>
+        const menuToggle = () => {
+            console.log("click");
+            let menu = document.querySelector(".sidebar").classList;
+            let icon = document.querySelector(".fa-bars").classList;
+            menu.toggle("hidden-mb");
+            icon.toggle("hidden-mb");
+        }
+    </script>
 </body>
 </html>
